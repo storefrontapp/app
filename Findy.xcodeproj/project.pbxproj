@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B57131BADABD70039DD42 /* Main.storyboard */; };
+		1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D239A261BAE2390007963A5 /* CustomMKPin.xib */; };
+		1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */; };
+		4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6851BAD4887009BD71C /* AppDelegate.swift */; };
+		4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6871BAD4887009BD71C /* ViewController.swift */; };
+		4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9FA68C1BAD4887009BD71C /* Assets.xcassets */; };
+		4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */; };
+		4B9FA69B1BAD4887009BD71C /* FindyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA69A1BAD4887009BD71C /* FindyTests.swift */; };
+		4B9FA6A61BAD4887009BD71C /* FindyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */; };
+		4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */; };
+		4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */; };
+		4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */; };
+		EA26EC5E1BAE27CA0048DD00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */; };
+		EA26EC601BAE27EA0048DD00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */; };
+		EA26EC621BAE27F40048DD00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC611BAE27F40048DD00 /* CoreGraphics.framework */; };
+		EA26EC641BAE27FC0048DD00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC631BAE27FC0048DD00 /* CoreLocation.framework */; };
+		EA26EC661BAE28030048DD00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC651BAE28030048DD00 /* QuartzCore.framework */; };
+		EA26EC681BAE28090048DD00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC671BAE28090048DD00 /* Security.framework */; };
+		EA26EC6A1BAE28110048DD00 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC691BAE28110048DD00 /* StoreKit.framework */; };
+		EA26EC6C1BAE28190048DD00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */; };
+		EA26EC6E1BAE28300048DD00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6D1BAE28300048DD00 /* libz.dylib */; };
+		EA26EC701BAE28400048DD00 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */; };
+		EA26ED211BAE4A190048DD00 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED201BAE4A190048DD00 /* Bolts.framework */; };
+		EA26ED231BAE4A260048DD00 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED221BAE4A260048DD00 /* Parse.framework */; };
+		EA26ED251BAE4A2C0048DD00 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */; };
+		EA26ED271BAE4A350048DD00 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */; };
+		EA26ED291BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */; };
+		EA26ED2B1BAE4A410048DD00 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */; };
+		EA26ED2D1BAE4A480048DD00 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */; };
+		EA26ED321BAE4AB60048DD00 /* login_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */; };
+		EA26ED331BAE4AB60048DD00 /* login_facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */; };
+		EA26ED341BAE4AB60048DD00 /* login_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED301BAE4AB60048DD00 /* login_twitter.png */; };
+		EA26ED351BAE4AB60048DD00 /* login_twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */; };
+		EA26ED391BAE4ACC0048DD00 /* hangers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */; };
+		EA26ED3A1BAE4ACC0048DD00 /* login_register.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED371BAE4ACC0048DD00 /* login_register.png */; };
+		EA26ED3B1BAE4ACC0048DD00 /* login_register@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B9FA6971BAD4887009BD71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B9FA67A1BAD4887009BD71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B9FA6811BAD4887009BD71C;
+			remoteInfo = Findy;
+		};
+		4B9FA6A21BAD4887009BD71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B9FA67A1BAD4887009BD71C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B9FA6811BAD4887009BD71C;
+			remoteInfo = Findy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D1B57131BADABD70039DD42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D239A261BAE2390007963A5 /* CustomMKPin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMKPin.xib; sourceTree = "<group>"; };
+		1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1DBAA1501BAE9C2F0061DC91 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		4B9FA6821BAD4887009BD71C /* Findy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA6851BAD4887009BD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B9FA6871BAD4887009BD71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B9FA68C1BAD4887009BD71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B9FA68F1BAD4887009BD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B9FA6911BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9FA6961BAD4887009BD71C /* FindyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA69A1BAD4887009BD71C /* FindyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindyTests.swift; path = FindyTests/FindyTests.swift; sourceTree = SOURCE_ROOT; };
+		4B9FA69C1BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindyUITests.swift; sourceTree = "<group>"; };
+		4B9FA6A71BAD4887009BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBCB3EC1BADFDA000A58FD9 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		4BBCB3EE1BADFDA000A58FD9 /* SiteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteDetailViewController.h; sourceTree = "<group>"; };
+		4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailViewController.m; sourceTree = "<group>"; };
+		4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EA26EC611BAE27F40048DD00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA26EC631BAE27FC0048DD00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EA26EC651BAE28030048DD00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA26EC671BAE28090048DD00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EA26EC691BAE28110048DD00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EA26EC6D1BAE28300048DD00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libz.dylib"; sourceTree = "<group>"; };
+		EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = "../../../../Applications/Adobe A/Adobe Flash CC/AIR3.8/lib/aot/stub/libsqlite3.dylib"; sourceTree = "<group>"; };
+		EA26ED201BAE4A190048DD00 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		EA26ED221BAE4A260048DD00 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_facebook.png; sourceTree = "<group>"; };
+		EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_facebook@2x.png"; sourceTree = "<group>"; };
+		EA26ED301BAE4AB60048DD00 /* login_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_twitter.png; sourceTree = "<group>"; };
+		EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_twitter@2x.png"; sourceTree = "<group>"; };
+		EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangers.jpeg; sourceTree = "<group>"; };
+		EA26ED371BAE4ACC0048DD00 /* login_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_register.png; sourceTree = "<group>"; };
+		EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_register@2x.png"; sourceTree = "<group>"; };
+		EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Findy-Bridging-Header.h"; path = "../Findy-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B9FA67F1BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA26ED211BAE4A190048DD00 /* Bolts.framework in Frameworks */,
+				EA26ED2D1BAE4A480048DD00 /* ParseUI.framework in Frameworks */,
+				EA26EC701BAE28400048DD00 /* libsqlite3.dylib in Frameworks */,
+				EA26EC6E1BAE28300048DD00 /* libz.dylib in Frameworks */,
+				EA26EC6C1BAE28190048DD00 /* SystemConfiguration.framework in Frameworks */,
+				EA26EC6A1BAE28110048DD00 /* StoreKit.framework in Frameworks */,
+				EA26EC681BAE28090048DD00 /* Security.framework in Frameworks */,
+				EA26EC661BAE28030048DD00 /* QuartzCore.framework in Frameworks */,
+				EA26EC641BAE27FC0048DD00 /* CoreLocation.framework in Frameworks */,
+				EA26ED231BAE4A260048DD00 /* Parse.framework in Frameworks */,
+				EA26EC621BAE27F40048DD00 /* CoreGraphics.framework in Frameworks */,
+				EA26ED291BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				EA26EC601BAE27EA0048DD00 /* CFNetwork.framework in Frameworks */,
+				EA26ED271BAE4A350048DD00 /* ParseFacebookUtils.framework in Frameworks */,
+				EA26EC5E1BAE27CA0048DD00 /* AudioToolbox.framework in Frameworks */,
+				EA26ED251BAE4A2C0048DD00 /* ParseCrashReporting.framework in Frameworks */,
+				EA26ED2B1BAE4A410048DD00 /* ParseTwitterUtils.framework in Frameworks */,
+				1D368D9E1BAD8E2B00EACFC8 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6931BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69E1BAD4887009BD71C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CDA56F405C58E432B7191D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA26EC6F1BAE28400048DD00 /* libsqlite3.dylib */,
+				EA26EC6D1BAE28300048DD00 /* libz.dylib */,
+				EA26ED2C1BAE4A480048DD00 /* ParseUI.framework */,
+				EA26ED2A1BAE4A410048DD00 /* ParseTwitterUtils.framework */,
+				EA26ED281BAE4A3C0048DD00 /* ParseFacebookUtilsV4.framework */,
+				EA26ED261BAE4A350048DD00 /* ParseFacebookUtils.framework */,
+				EA26ED241BAE4A2C0048DD00 /* ParseCrashReporting.framework */,
+				EA26ED221BAE4A260048DD00 /* Parse.framework */,
+				EA26ED201BAE4A190048DD00 /* Bolts.framework */,
+				EA26EC6B1BAE28190048DD00 /* SystemConfiguration.framework */,
+				EA26EC691BAE28110048DD00 /* StoreKit.framework */,
+				EA26EC671BAE28090048DD00 /* Security.framework */,
+				EA26EC651BAE28030048DD00 /* QuartzCore.framework */,
+				EA26EC631BAE27FC0048DD00 /* CoreLocation.framework */,
+				EA26EC611BAE27F40048DD00 /* CoreGraphics.framework */,
+				EA26EC5F1BAE27EA0048DD00 /* CFNetwork.framework */,
+				EA26EC5D1BAE27CA0048DD00 /* AudioToolbox.framework */,
+				1D368D9D1BAD8E2B00EACFC8 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B9FA6791BAD4887009BD71C = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6841BAD4887009BD71C /* Findy */,
+				4B9FA6991BAD4887009BD71C /* FindyTests */,
+				4B9FA6A41BAD4887009BD71C /* FindyUITests */,
+				4B9FA6831BAD4887009BD71C /* Products */,
+				2CDA56F405C58E432B7191D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B9FA6831BAD4887009BD71C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6821BAD4887009BD71C /* Findy.app */,
+				4B9FA6961BAD4887009BD71C /* FindyTests.xctest */,
+				4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9FA6841BAD4887009BD71C /* Findy */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAA1501BAE9C2F0061DC91 /* Bridging.h */,
+				4B9FA6851BAD4887009BD71C /* AppDelegate.swift */,
+				4B9FA6871BAD4887009BD71C /* ViewController.swift */,
+				1D1B57131BADABD70039DD42 /* Main.storyboard */,
+				EA26ED361BAE4ACC0048DD00 /* hangers.jpeg */,
+				EA26ED371BAE4ACC0048DD00 /* login_register.png */,
+				EA26ED381BAE4ACC0048DD00 /* login_register@2x.png */,
+				EA26ED2E1BAE4AB60048DD00 /* login_facebook.png */,
+				EA26ED2F1BAE4AB60048DD00 /* login_facebook@2x.png */,
+				EA26ED301BAE4AB60048DD00 /* login_twitter.png */,
+				EA26ED311BAE4AB60048DD00 /* login_twitter@2x.png */,
+				1D239A261BAE2390007963A5 /* CustomMKPin.xib */,
+				4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */,
+				4B9FA68C1BAD4887009BD71C /* Assets.xcassets */,
+				4BBCB3E91BADFDA000A58FD9 /* Login */,
+				4B9FA6911BAD4887009BD71C /* Info.plist */,
+			);
+			path = Findy;
+			sourceTree = "<group>";
+		};
+		4B9FA6991BAD4887009BD71C /* FindyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA69A1BAD4887009BD71C /* FindyTests.swift */,
+				4B9FA69C1BAD4887009BD71C /* Info.plist */,
+			);
+			path = FindyTests;
+			sourceTree = "<group>";
+		};
+		4B9FA6A41BAD4887009BD71C /* FindyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FA6A51BAD4887009BD71C /* FindyUITests.swift */,
+				4B9FA6A71BAD4887009BD71C /* Info.plist */,
+			);
+			path = FindyUITests;
+			sourceTree = "<group>";
+		};
+		4BBCB3E91BADFDA000A58FD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCB3EC1BADFDA000A58FD9 /* ParentViewController.h */,
+				4BBCB3ED1BADFDA000A58FD9 /* ParentViewController.m */,
+				4BBCB3EE1BADFDA000A58FD9 /* SiteDetailViewController.h */,
+				4BBCB3EF1BADFDA000A58FD9 /* SiteDetailViewController.m */,
+				4BBCB3F01BADFDA000A58FD9 /* LoginViewController.h */,
+				4BBCB3F11BADFDA000A58FD9 /* LoginViewController.m */,
+				EADD3FDE1BADA99500BC3EF6 /* Findy-Bridging-Header.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B9FA6811BAD4887009BD71C /* Findy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */;
+			buildPhases = (
+				4B9FA67E1BAD4887009BD71C /* Sources */,
+				4B9FA67F1BAD4887009BD71C /* Frameworks */,
+				4B9FA6801BAD4887009BD71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Findy;
+			productName = Findy;
+			productReference = 4B9FA6821BAD4887009BD71C /* Findy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B9FA6951BAD4887009BD71C /* FindyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6AD1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyTests" */;
+			buildPhases = (
+				4B9FA6921BAD4887009BD71C /* Sources */,
+				4B9FA6931BAD4887009BD71C /* Frameworks */,
+				4B9FA6941BAD4887009BD71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9FA6981BAD4887009BD71C /* PBXTargetDependency */,
+			);
+			name = FindyTests;
+			productName = FindyTests;
+			productReference = 4B9FA6961BAD4887009BD71C /* FindyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B9FA6A01BAD4887009BD71C /* FindyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9FA6B01BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyUITests" */;
+			buildPhases = (
+				4B9FA69D1BAD4887009BD71C /* Sources */,
+				4B9FA69E1BAD4887009BD71C /* Frameworks */,
+				4B9FA69F1BAD4887009BD71C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9FA6A31BAD4887009BD71C /* PBXTargetDependency */,
+			);
+			name = FindyUITests;
+			productName = FindyUITests;
+			productReference = 4B9FA6A11BAD4887009BD71C /* FindyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B9FA67A1BAD4887009BD71C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = FindyTeam;
+				TargetAttributes = {
+					4B9FA6811BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 45J9WDN6PB;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4B9FA6951BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4B9FA6811BAD4887009BD71C;
+					};
+					4B9FA6A01BAD4887009BD71C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4B9FA6811BAD4887009BD71C;
+					};
+				};
+			};
+			buildConfigurationList = 4B9FA67D1BAD4887009BD71C /* Build configuration list for PBXProject "Findy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B9FA6791BAD4887009BD71C;
+			productRefGroup = 4B9FA6831BAD4887009BD71C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B9FA6811BAD4887009BD71C /* Findy */,
+				4B9FA6951BAD4887009BD71C /* FindyTests */,
+				4B9FA6A01BAD4887009BD71C /* FindyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B9FA6801BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA26ED331BAE4AB60048DD00 /* login_facebook@2x.png in Resources */,
+				4B9FA6901BAD4887009BD71C /* LaunchScreen.storyboard in Resources */,
+				EA26ED3B1BAE4ACC0048DD00 /* login_register@2x.png in Resources */,
+				EA26ED3A1BAE4ACC0048DD00 /* login_register.png in Resources */,
+				1D1B57141BADABD70039DD42 /* Main.storyboard in Resources */,
+				EA26ED341BAE4AB60048DD00 /* login_twitter.png in Resources */,
+				EA26ED351BAE4AB60048DD00 /* login_twitter@2x.png in Resources */,
+				1D239A271BAE2390007963A5 /* CustomMKPin.xib in Resources */,
+				4B9FA68D1BAD4887009BD71C /* Assets.xcassets in Resources */,
+				EA26ED321BAE4AB60048DD00 /* login_facebook.png in Resources */,
+				EA26ED391BAE4ACC0048DD00 /* hangers.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6941BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69F1BAD4887009BD71C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B9FA67E1BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBCB3F81BADFDA000A58FD9 /* SiteDetailViewController.m in Sources */,
+				4B9FA6881BAD4887009BD71C /* ViewController.swift in Sources */,
+				4B9FA6861BAD4887009BD71C /* AppDelegate.swift in Sources */,
+				4BBCB3F71BADFDA000A58FD9 /* ParentViewController.m in Sources */,
+				4BBCB3F91BADFDA000A58FD9 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA6921BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9FA69B1BAD4887009BD71C /* FindyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9FA69D1BAD4887009BD71C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9FA6A61BAD4887009BD71C /* FindyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B9FA6981BAD4887009BD71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B9FA6811BAD4887009BD71C /* Findy */;
+			targetProxy = 4B9FA6971BAD4887009BD71C /* PBXContainerItemProxy */;
+		};
+		4B9FA6A31BAD4887009BD71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B9FA6811BAD4887009BD71C /* Findy */;
+			targetProxy = 4B9FA6A21BAD4887009BD71C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B9FA68E1BAD4887009BD71C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B9FA68F1BAD4887009BD71C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B9FA6A81BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B9FA6A91BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B9FA6AB1BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Findy",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Findy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Findy/Bridging.h;
+			};
+			name = Debug;
+		};
+		4B9FA6AC1BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Findy",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Findy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.Findy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Findy/Bridging.h;
+			};
+			name = Release;
+		};
+		4B9FA6AE1BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findy.app/Findy";
+			};
+			name = Debug;
+		};
+		4B9FA6AF1BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Findy.app/Findy";
+			};
+			name = Release;
+		};
+		4B9FA6B11BAD4887009BD71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FindyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Findy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4B9FA6B21BAD4887009BD71C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FindyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FindyTeam.FindyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Findy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B9FA67D1BAD4887009BD71C /* Build configuration list for PBXProject "Findy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6A81BAD4887009BD71C /* Debug */,
+				4B9FA6A91BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6AA1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "Findy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6AB1BAD4887009BD71C /* Debug */,
+				4B9FA6AC1BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6AD1BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6AE1BAD4887009BD71C /* Debug */,
+				4B9FA6AF1BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9FA6B01BAD4887009BD71C /* Build configuration list for PBXNativeTarget "FindyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9FA6B11BAD4887009BD71C /* Debug */,
+				4B9FA6B21BAD4887009BD71C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B9FA67A1BAD4887009BD71C /* Project object */;
+}
